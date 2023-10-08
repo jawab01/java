@@ -1,5 +1,5 @@
 1) Write a Java program using synchronized threads which demonstrate producer-consumer concepts.
-
+```
 class Q {
     int n;
     boolean valueset = false;
@@ -72,7 +72,7 @@ class Demo {
     }
 }
 
-
+```
 
 
 
@@ -105,6 +105,7 @@ Hint: Swing application which uses,
  i) JTabbed Pane
  ii) Each  tab should Jpanel which include any one component given below  in each JPanel
  iii)CheckBox/List/RadioButton
+```
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -181,7 +182,7 @@ class ElectivePanel extends JPanel {
 }
 
 
- 
+ ```
 
 
  
@@ -199,7 +200,7 @@ class ElectivePanel extends JPanel {
 
  
 3) Design and implement a simple Client Server Application using RMI. 
-
+```
 AddServerIntf.java
 
 import java.rmi.*;
@@ -250,7 +251,7 @@ public class AddClient {
         }
     }
 }
-
+```
 
 Output:
 Open a terminal
@@ -293,7 +294,7 @@ Navigate to the src folder of your project
 
 
 4) Design and implement Client Server communication using socket programming (Client requests a file, Server responds to client with contents of that file which is then display on the screen by Client). 
-
+```
 Client.java
 import java.net.*;
 import java.io.*;
@@ -381,7 +382,7 @@ public class Server {
         }
     }
 }
-
+```
 Output
 Create a file called testfile.txt in the folder where Client.java and Server.java is located. Add some content.
 Open two terminals
@@ -403,6 +404,7 @@ Navigate to the src folder of your project
 5) Implement a JAVA Servlet Program to implement a dynamic HTML using Servlet (user name and password should be accepted using HTML and displayed using a Servlet). 
 
 Create a new servlet named Servlet9 in the project (as shown in the steps above from Page 37) and then type the following code in it
+```
 Servlet9.java
 
 
@@ -455,6 +457,7 @@ return;
 </form>
 </body>
 </html>
+```
 In the above html file, replace ProjectName and ServletClassName with your respective project and filename
 
 
@@ -486,7 +489,7 @@ Output
 2. Insertion of Values to the Table.
 3. Update and Delete contents as and when required
 
-
+```
 
 import java.sql.*;
 class prg{
@@ -523,7 +526,7 @@ System.out.println(e);
 }
 }
 }
-
+```
 
 Note:
 1.	Create the table Books using SQL Command Prompt or MySql Command Prompt.
@@ -535,7 +538,7 @@ Note:
 
 PART-B
 1. Simulate a three nodes point to point network with duplex links between them. Set the queue size and vary the bandwidth and find the number of packets dropped. 
-
+```
  
 Program(lab1.tcl)
 set ns [ new Simulator ]
@@ -607,7 +610,7 @@ count++ ;
 END{
 printf("The Total no of Packets Dropped due to Congestion : %d\n\n", count) 
 } 
-
+```
 Output: 
 ns lab1.tcl 
 awk –f lab1.awk lab1.tr 
@@ -697,7 +700,7 @@ Error rate	Data rate	Throughput
 0.1	0.0001	
 
 
-
+```
 Program(lan.tcl)
 
 set ns  [new Simulator]
@@ -768,7 +771,7 @@ BEGIN{
 END{
 	printf("Throughput: %f Mbps \n\n",(pkt/time)*(8/1000000));
 }
-
+```
 Execution of the program
 
 Type the following commands in the terminal window for executing the programs.
@@ -825,7 +828,7 @@ BANDWIDTH
 200Mb 	0.001 		
 
 
-
+```
 PROGRAM (lab3.tcl)
 
 set ns [new Simulator] 
@@ -923,7 +926,7 @@ printf("\n Total number of packets sent by UDP : %d\n",udp);
 } 
 
 
-
+```
 
 Execution of the program
 
@@ -968,9 +971,9 @@ Screenshot
 An agent has a name, which is a unique identifier of the agent. It is shown as a square with its name inside, and a line link the square to its associated node. The add agent and monitor agent are commands that support agent tracing.
 #orient – The orientation of the link (up, down, right, left , right up, right down, left up, left down)
 #nam_tracevar_true :It is format for TCP variable, required by nam visualization of TCP.
-# detach-agent - Detach the agent of type agent from the node
-# trace- annotate: creates trace file. It will provide the information about the packet transfer event at the bottom of the simulation window
-
+#detach-agent - Detach the agent of type agent from the node
+#trace- annotate: creates trace file. It will provide the information about the packet transfer event at the bottom of the simulation window
+```
 Program(stop.tcl)
 
 set ns [new Simulator]
@@ -1029,7 +1032,7 @@ exec nam stop.nam &
 exit 0	
 }
 $ns run
-
+```
 Execution of the program 
  
 Type the following commands in the terminal window for executing the programs. 
@@ -1054,7 +1057,7 @@ Interface queue Type :Queue/DropTail
 MAC :802.11 
 Application :FTP 
 Antenna :Omni antenna
-
+```
 (wireless.tcl) 
 set ns [new Simulator]
 set tf [open wireless.tr w]
@@ -1164,6 +1167,7 @@ END{
 
 	printf(" The Throughput  from n2 to n3: %fMbps\n",((count2*pack2*8)/(time2*1000000)))
 }
+```
 Execution of the program
 
 Type the following commands in the terminal window for executing the programs.
